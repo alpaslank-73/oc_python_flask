@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/', methods = ['GET'])
 def home():
-    return ('Hello World -1 ')
+    return ('Hello World - 1')
 
 @app.route('/healthz', methods = ['GET'])
 def healthz():
@@ -16,4 +16,4 @@ def healthz():
     return resp
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0', port=8080)
